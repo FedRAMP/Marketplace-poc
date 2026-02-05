@@ -1,0 +1,26 @@
+[
+  {
+    "id": "M001",
+    "email": "alice@example.com",
+    "name": "Alice Smith",
+    "is_legacy": true
+  },
+  {
+    "id": "M002",
+    "email": "bob1@example.com",
+    "name": "Bob Johnson",
+    "is_legacy": true
+  },
+  {
+    "id": "M003",
+    "email": "charlie@example.com",
+    "name": "Charlie Brown",
+    "is_legacy": false
+  },
+  {
+    "id": "M004",
+    "email": "diana@example.com",
+    "name": "Diana Prince",
+    "is_legacy": false
+  }
+]
