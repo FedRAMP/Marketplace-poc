@@ -1,0 +1,37 @@
+name: Merge Marketplace Data
+
+on:
+  push:
+    branches:
+      - main # Trigger this workflow whenever there's a push to the 'main' branch
+    paths:
+      - 'marketplace_data.json' # Only run if marketplace_data.json changes
+      - 'non_legacy_data/**'    # Or if any non_legacy_data JSON changes
+      - 'merge_marketplace_data.py' # Or if the script itself changes
+  workflow_dispatch: # Allows manual triggering from the GitHub Actions tab
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run merge script
+        run: python merge_marketplace_data.py
+
+      - name: Commit merged data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Automated: Update master_marketplace_data.json"
+          files: "master_marketplace_data.json"
+          # The GITHUB_TOKEN has write permissions by default for actions that push to the same repo
+          # No need for a separate PAT here unless pushing to another repo or needing elevated permissions
