@@ -20,5 +20,16 @@
     "id": "M004",
     "json_link": "https://fedramp.github.io/Marketplace-poc/non_legacy_data/M004.json",
     "is_legacy": false
+  },
+  {
+    "id": "M005",
+    "email": "eric@example.com",
+    "name": "Eric Emory",
+    "is_legacy": true
+  },
+  {
+    "id": "M006",
+    "json_link": "https://fedramp.github.io/Marketplace-poc/non_legacy_data/M006.json",
+    "is_legacy": false
   }
 ]
