@@ -22,5 +22,17 @@
     "email": "diana@example.com",
     "name": "Diana Prince",
     "is_legacy": false
+  },
+  {
+    "id": "M005",
+    "email": "eric@example.com",
+    "name": "Eric Emory",
+    "is_legacy": true
+  },
+  {
+    "id": "M006",
+    "email": "francesca@example.com",
+    "name": "Francesca Jones",
+    "is_legacy": false
   }
 ]
