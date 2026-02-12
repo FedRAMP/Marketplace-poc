@@ -1,8 +1,8 @@
 {
-  "company_name": "ExampleTech Solutions",
-  "product_name": "SecureCloud Platform",
+  "company_name": "CoolTech Solutions",
+  "product_name": "ACloud Platform",
   "authorization_path": "20x", 
   "description": "A comprehensive cloud security platform providing end-to-end encryption, identity management, and compliance monitoring for federal agencies.",
-  "public_security_email": "kylie.hunter@gsa.gov",
+  "public_security_email": "zoya.egiazaryan@gsa.gov",
   "private_security_email": "internal-security@exampletech.com"
 }
