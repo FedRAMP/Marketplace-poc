@@ -3,6 +3,6 @@
   "product_name": "SecureCloud Platform",
   "authorization_path": "20x", 
   "description": "A comprehensive cloud security platform providing end-to-end encryption, identity management, and compliance monitoring for federal agencies.",
-  "public_security_email": "security@exampletech.com",
+  "public_security_email": "kylie.hunter@gsa.gov",
   "private_security_email": "internal-security@exampletech.com"
 }
