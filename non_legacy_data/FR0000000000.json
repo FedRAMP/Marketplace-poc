@@ -1,0 +1,49 @@
+{
+  "frid": "FR123456789",
+  "csp_name": "SecureCloud Infrastructure Inc.",
+  "cso_name": "SecureCloud Enterprise IaaS Platform",
+  "sales_email": "sales@securecloud.com",
+  "security_email": "security@securecloud.com",
+  "assessor": {
+    "name": "CyberAssess Solutions",
+    "id": "CA123456"
+  },
+  "path": "Rev5",
+  "website": "https://www.securecloud.com",
+  "service_model": "IaaS",
+  "deployment_model": "Public Cloud",
+  "description": "SecureCloud Enterprise IaaS Platform provides scalable, secure infrastructure-as-a-service solutions designed specifically for federal agencies. Our platform offers virtualized computing resources, storage, and networking capabilities with built-in compliance controls and continuous monitoring to meet stringent government security requirements.",
+  "business_function": [
+    "Infrastructure Management",
+    "Data Storage",
+    "Backup and Recovery",
+    "Network Services",
+    "Compute Services"
+  ],
+  "authorized_services": [
+    {
+      "service_name": "Virtual Machine Instances",
+      "date_available": "2023-03-15"
+    },
+    {
+      "service_name": "Block Storage Service",
+      "date_available": "2023-03-15"
+    },
+    {
+      "service_name": "Virtual Network Service",
+      "date_available": "2023-04-01"
+    },
+    {
+      "service_name": "Load Balancing Service",
+      "date_available": "2023-05-10"
+    }
+  ],
+  "leveraged_systems": [
+    {
+      "system_name": "FedIdentity Authentication Service",
+      "csp_name": "Federal Identity Solutions Corp",
+      "frid": "FR987654321"
+    }
+  ],
+  "logo_url": "http://corribgundogs.com/wp-content/uploads/2020/03/Corrib-Gun-Dogs-Ireland-Labradors-Corrib-Jasper-1.jpg"
+}
