@@ -1,0 +1,63 @@
+{
+  "frid": "FR345678901",
+  "csp_name": "Federal Development Platform Corp",
+  "cso_name": "FedDev Application Development Platform",
+  "sales_email": "enterprise-sales@feddev.com",
+  "security_email": "security-team@feddev.com",
+  "assessor": {
+    "name": "Compliance Verification Inc.",
+    "id": "CV456789"
+  },
+  "path": "Rev5",
+  "website": "https://platform.feddev.com",
+  "service_model": "PaaS",
+  "deployment_model": "Hybrid Cloud",
+  "description": "FedDev Application Development Platform is a platform-as-a-service solution that provides government developers with a secure, compliant environment for building, testing, and deploying applications. The platform includes integrated development tools, automated CI/CD pipelines, container orchestration, and built-in security scanning capabilities tailored for federal requirements.",
+  "business_function": [
+    "Application Development",
+    "Software Testing",
+    "DevOps and CI/CD",
+    "Container Management",
+    "API Management",
+    "Database Services"
+  ],
+  "authorized_services": [
+    {
+      "service_name": "Integrated Development Environment",
+      "date_available": "2023-01-10"
+    },
+    {
+      "service_name": "Container Orchestration Platform",
+      "date_available": "2023-01-10"
+    },
+    {
+      "service_name": "CI/CD Pipeline Service",
+      "date_available": "2023-02-15"
+    },
+    {
+      "service_name": "API Gateway Service",
+      "date_available": "2023-03-01"
+    },
+    {
+      "service_name": "Managed Database Service",
+      "date_available": "2023-04-20"
+    },
+    {
+      "service_name": "Security Scanning Tools",
+      "date_available": "2023-05-15"
+    }
+  ],
+  "leveraged_systems": [
+    {
+      "system_name": "SecureCloud Enterprise IaaS Platform",
+      "csp_name": "SecureCloud Infrastructure Inc.",
+      "frid": "FR123456789"
+    },
+    {
+      "system_name": "Federal Identity Management System",
+      "csp_name": "ID Solutions Federal",
+      "frid": "FR555666777"
+    }
+  ],
+  "logo_url": "https://thumbs.dreamstime.com/b/shih-tzu-puppy-running-beach-shih-tzu-dog-breed-shih-tzu-puppy-running-beach-143705038.jpg?w=992"
+}
