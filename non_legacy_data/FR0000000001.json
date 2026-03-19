@@ -1,0 +1,45 @@
+{
+  "frid": "FR0000000001",
+  "csp_name": "GovTech Analytics LLC",
+  "cso_name": "GovAnalytics Business Intelligence Suite",
+  "sales_email": "sales@govtechanalytics.com",
+  "security_email": "infosec@govtechanalytics.com",
+  "path": "20x",
+  "website": "https://www.govtechanalytics.com",
+  "service_model": "SaaS",
+  "deployment_model": "Government Community Cloud",
+  "description": "GovAnalytics Business Intelligence Suite is a comprehensive software-as-a-service platform that enables federal agencies to perform advanced data analytics, generate insights, and create interactive dashboards. The platform includes machine learning capabilities, automated reporting, and real-time data visualization tools specifically designed for government use cases.",
+  "business_function": [
+    "Business Intelligence",
+    "Data Analytics",
+    "Reporting and Visualization",
+    "Performance Management",
+    "Predictive Analytics"
+  ],
+  "authorized_services": [
+    {
+      "service_name": "Interactive Dashboard Creator",
+      "date_available": "2023-06-20"
+    },
+    {
+      "service_name": "Advanced Analytics Engine",
+      "date_available": "2023-06-20"
+    },
+    {
+      "service_name": "Automated Report Generator",
+      "date_available": "2023-07-15"
+    },
+    {
+      "service_name": "Data Visualization Tools",
+      "date_available": "2023-08-01"
+    },
+    {
+      "service_name": "Machine Learning Models",
+      "date_available": "2023-09-10"
+    }
+  ],
+  "assessor": {
+    "name": "FedSecure Assessment Group",
+    "id": "FS789012"
+  }
+}
