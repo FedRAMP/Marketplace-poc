@@ -1,0 +1,60 @@
+# This workflow will install Python dependencies, run the fetch_data script, and create a PR with changes
+name: Fetch Data and Create PR From Endpoint
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  fetch-and-update:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.x"
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+    
+    - name: Run fetch_data script
+      run: |
+        python fetch_data.py
+    
+    - name: Commit and create PR
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "github-actions[bot]"
+        
+        # Checking any changes
+        if [ -n "$(git status --porcelain)" ]; then
+          # Create and switch to new branch
+          git checkout -b automated-data-update-$(date +%Y%m%d-%H%M%S)
+          
+          # Add and commit changes
+          git add .
+          git commit -m "Update data files from fetch_data.py"
+          
+          # Push the branch
+          git push origin HEAD
+          
+          # Create PR using GitHub CLI
+          gh pr create --title "Automated Data Update" \
+                      --body "This PR was automatically created by the fetch_data workflow. Updated data files from running fetch_data.py." \
+                      --head $(git branch --show-current) \
+                      --base main
+        else
+          echo "No changes detected, skipping PR creation"
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
